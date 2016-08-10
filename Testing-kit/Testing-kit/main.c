@@ -14,6 +14,8 @@
 
 int main(void)
 {
+	USART_Init(51,0);
+	USART_Init(51,1);
     /* Replace with your application code */
     while (1) 
     {
