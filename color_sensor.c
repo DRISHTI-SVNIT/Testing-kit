@@ -9,7 +9,7 @@
 
 void color_sensor_test(void)
 {
-   unsigned int redcolorstrength;
+   unsigned int redcolorstrength;		
    unsigned int greencolorstrength;
    unsigned int bluecolorstrength;
    int flag1=0;
@@ -21,7 +21,7 @@ void color_sensor_test(void)
    TCCR1B |= 1<<CS10;    //enable 16 bit timer
    PORTC |= _BV(PINC1);      //s0 high
    PORTC &= ~_BV(PINC2);		//s1 low
-   
+  						//Prescaling sensor to 20% 
 	   PORTC &= ~(1<<PINC3);
 	   PORTC &= ~(1<<PINC4);                   //RED color sense s2 and s3 low
 	   
