@@ -3,7 +3,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#define F_CPU 8000000UL
+#define F_CPU 1000000UL
 #include <util/delay.h>
 
 #define New_Line(n) USART_Transmitchar(0x0A,n);\

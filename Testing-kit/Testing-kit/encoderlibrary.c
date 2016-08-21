@@ -1,5 +1,5 @@
 #include "encoderlibrary.h"
- 
+
 
 
 void InitEncoder(int ShowTime)

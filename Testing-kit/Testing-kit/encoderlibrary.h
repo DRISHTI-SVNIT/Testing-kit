@@ -4,7 +4,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#define F_CPU 8000000UL
+#define F_CPU 1000000UL
 #define Encoder_InputDDR		DDRD
 #define Encoder_InputPort		PORTD		//another input
 #define Encoder_InputPinNumber	0
@@ -16,11 +16,11 @@
 
 #define Ppr			1000.0
 
-volatile int16_t Counter=0;
+//volatile int16_t Counter=0;
 
 #define TimeToShow 1.0	//must be <=2
 
-float rpm=0;
+//float rpm=0;
 
 #define IntType0	ISC10
 

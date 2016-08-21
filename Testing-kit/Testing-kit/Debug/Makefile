@@ -37,7 +37,12 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../color_sensor.c \
+../encoderlibrary.c \
+../L293D_PWM_Library.c \
+../LCD_LIBRARY.c \
 ../main.c \
+../test_servo.c \
 ../USART_128.c
 
 
@@ -48,19 +53,39 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+color_sensor.o \
+encoderlibrary.o \
+L293D_PWM_Library.o \
+LCD_LIBRARY.o \
 main.o \
+test_servo.o \
 USART_128.o
 
 OBJS_AS_ARGS +=  \
+color_sensor.o \
+encoderlibrary.o \
+L293D_PWM_Library.o \
+LCD_LIBRARY.o \
 main.o \
+test_servo.o \
 USART_128.o
 
 C_DEPS +=  \
+color_sensor.d \
+encoderlibrary.d \
+L293D_PWM_Library.d \
+LCD_LIBRARY.d \
 main.d \
+test_servo.d \
 USART_128.d
 
 C_DEPS_AS_ARGS +=  \
+color_sensor.d \
+encoderlibrary.d \
+L293D_PWM_Library.d \
+LCD_LIBRARY.d \
 main.d \
+test_servo.d \
 USART_128.d
 
 OUTPUT_FILE_PATH +=Testing-kit.elf
@@ -77,6 +102,16 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
+
+
 
 
 

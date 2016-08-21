@@ -4,7 +4,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#define F_CPU 8000000UL
+#define F_CPU 1000000UL
 #define PwmDDR  DDRE
 #define PwmPort PORTE
 #define PwmPin  3
@@ -19,8 +19,8 @@
 #define OutputPin4	3
 
 void InitPWM(void);
-void SetDutyCycle(float n);
-void SetICR(float n);
+void SetDutyCycle(int n);
+void SetICR(int n);
 
 
 
